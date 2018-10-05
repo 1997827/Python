@@ -1,0 +1,7 @@
+1.cd "folder"
+2.git config --global user.name "usernameofgithubaccount"
+3.git config --global user.email xxx@gmail.com
+4.git clone (url)
+5.git status
+6.git commit -m "msg" filename
+7.git push -u origin master
