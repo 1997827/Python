@@ -6,4 +6,4 @@
 6.git commit -m "msg" filename
 7.git push -u origin master
 8.git commit -m "msg2" filename
-9.precommit Hook
+
