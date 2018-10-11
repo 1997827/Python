@@ -8,3 +8,10 @@
 8.git commit -m "msg2" filename
 
 Hi this is a test
+Hi this is a test
+Hi this is a test
+Hi this is a test
+Hi this is a test
+Hi this is a test
+Hi this is a test
+Hi this is a test
