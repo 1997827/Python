@@ -12,7 +12,7 @@ cd "${0%/*}/.."
 
 
 
-find . -type f -name '*.xml'
+find  -type f -name '*.xml'
 value=$(<file.xml)
 echo "Content in File"
 echo "$value"
