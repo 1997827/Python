@@ -11,7 +11,9 @@ cd "${0%/*}/.."
 # let's fake failing test for now
 
 
-
+for i in $(find  -type f -name '*.xml'); do # Not recommended, will break on whitespace
+    echo "$i"
+done
 find  -type f -name '*.xml'
 value=$(<file.xml)
 echo "Content in File"
