@@ -12,6 +12,7 @@ cd "${0%/*}/.."
 
 
 for i in $(find  -type f -name '*.xml'); do # Not recommended, will break on whitespace
+echo "Inside loop"
     echo "$i"
     value=$(<$i)
     echo "Content in File"
