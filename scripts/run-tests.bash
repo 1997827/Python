@@ -12,15 +12,11 @@ cd "${0%/*}/.."
 
 
 
-
+find . -type f -name '*.xml'
 value=$(<file.xml)
 echo "Content in File"
 echo "$value"
-xmllint --format file.xml>>file.xml
-value1=$(<file.xml)
-echo "Content after Formatting"
-echo "$value1"
-echo "Formatted"
+
 # example of commands for different languages
 # eslint .         # JS code quality check
 # npm test         # JS unit tests
