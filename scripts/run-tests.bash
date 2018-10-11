@@ -11,14 +11,12 @@ cd "${0%/*}/.."
 # let's fake failing test for now
 
 
-echo '<root><foo a="b">lorem</foo><bar value="ipsum" /></root>' |
-    xmllint --format -
 
-echo "Formatted"
 
 value=$(<file.xml)
 echo "$value"
-
+echo xmllint --format file.xml
+echo "Formatted"
 
 # example of commands for different languages
 # eslint .         # JS code quality check
