@@ -1,8 +1,2 @@
 <root><foo a="b">lorem</foo><bar value="ipsum" /></root>
 
-
-<?xml version="1.0"?>
-<root>
-  <foo a="b">lorem</foo>
-  <bar value="ipsum"/>
-</root>

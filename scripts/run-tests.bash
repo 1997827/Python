@@ -13,11 +13,17 @@ cd "${0%/*}/.."
 
 for i in $(find  -type f -name '*.xml'); do # Not recommended, will break on whitespace
     echo "$i"
+    value=$(<$i)
+    echo "Content in File"
+    echo "$value"
+    xmllint --format $i>>$i
+    value1=$(<$i)
+    echo "Content after Formatting"
+    echo "$value1"
+    echo "Formatted"
 done
 
-value=$(<file.xml)
-echo "Content in File"
-echo "$value"
+
 
 # example of commands for different languages
 # eslint .         # JS code quality check
