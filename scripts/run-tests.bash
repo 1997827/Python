@@ -15,7 +15,7 @@ cd "${0%/*}/.."
 
 value=$(<file.xml)
 echo "$value"
-echo xmllint --format file.xml
+xmllint --format file.xml
 echo "Formatted"
 
 # example of commands for different languages
