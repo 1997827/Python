@@ -14,10 +14,10 @@ cd "${0%/*}/.."
 
 
 value=$(<file.xml)
+echo "Content in File"
 echo "$value"
 xmllint --format file.xml>>file.xml
 echo "Formatted"
-
 # example of commands for different languages
 # eslint .         # JS code quality check
 # npm test         # JS unit tests
