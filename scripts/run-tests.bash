@@ -25,6 +25,18 @@ echo "Inside loop"
 done
 
 
+for i in $(find  -type f -name '*.wsdl'); do # Not recommended, will break on whitespace
+echo "Inside loop"
+    echo "$i"
+    value=$(<$i)
+    echo "Content in File"
+    echo "$value"
+    xmllint --format $i>>$i
+    value1=$(<$i)
+    echo "Content after Formatting"
+    echo "$value1"
+    echo "Formatted"
+done
 
 # example of commands for different languages
 # eslint .         # JS code quality check
